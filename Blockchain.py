@@ -68,7 +68,7 @@ class BlockchainNode(Node.Node):
                 temp=[]
                 for trans in self.transaction_list.split(','):
                     temp.append(trans)
-
+                #This is a HJ edit. I am being productive!
                 self.transaction_list = temp
             def __init__(self):
                 self.chain = []
@@ -88,7 +88,7 @@ class BlockchainNode(Node.Node):
                 self.node_address = self.gen_node_address(self.public_key)
                 self.miner = Mine(self)
                 self.miner_count = 0
-
+                #I am bored and I swear someone smoked in this Cafe. Smells like cig in here.
             def gen_keys(self):
                 self.private_key = self.gen_private_key()
                 self.public_key = self.gen_public_key(self.private_key)
